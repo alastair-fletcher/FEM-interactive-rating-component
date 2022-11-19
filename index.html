@@ -20,37 +20,43 @@
   </head>
   <body>
     <main>
-      <div class="container">
-        <!-- Rating state start -->
-        <div class="star-image">
-          <img src="./images/icon-star.svg" alt="star" />
-        </div>
-        <div class="text">
-          <h1>How did we do?</h1>
-          <p>
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
-        </div>
+      <div class="star-image">
+        <img src="./images/icon-star.svg" alt="star" />
+      </div>
+      <div class="text">
+        <h1>How did we do?</h1>
+        <p>
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+      </div>
+      <form action="">
         <div class="rating-buttons">
-          <button class="rating">1</button>
-          <button class="rating">2</button>
-          <button class="rating">3</button>
-          <button class="rating">4</button>
-          <button class="rating">5</button>
+          <input type="radio" name="ratings" id="one" value="1" />
+          <label class="numbers" for="one">1</label>
+
+          <input type="radio" name="ratings" id="two" value="2" />
+          <label class="numbers" for="two">2</label>
+
+          <input type="radio" name="ratings" id="three" value="3" />
+          <label class="numbers" for="three">3</label>
+
+          <input type="radio" name="ratings" id="four" value="4" />
+          <label class="numbers" for="four">4</label>
+
+          <input type="radio" name="ratings" id="five" value="5" />
+          <label class="numbers" for="five">5</label>
         </div>
         <button class="submit">SUBMIT</button>
-        <!-- Rating state end -->
+      </form>
+      <!-- Thank you state start -->
 
-        <!-- Thank you state start -->
-
-        <!-- You selected -->
-        <!-- Add rating here -->
-        <!-- out of 5 Thank you! We appreciate you taking the time to give a rating.
+      <!-- You selected -->
+      <!-- Add rating here -->
+      <!-- out of 5 Thank you! We appreciate you taking the time to give a rating.
         If you ever need more support, don’t hesitate to get in touch! -->
 
-        <!-- Thank you state end -->
-      </div>
+      <!-- Thank you state end -->
     </main>
   </body>
 </html>

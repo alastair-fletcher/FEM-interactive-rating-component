@@ -22,7 +22,7 @@ body {
   color: $Light-Grey;
 }
 
-.container {
+main {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -42,38 +42,50 @@ body {
     height: 3rem;
     border-radius: 50%;
   }
+
   h1 {
     color: $White;
     margin-bottom: 0.3em;
     font-weight: 400;
   }
+
   p {
     line-height: 1.7;
   }
+
   .rating-buttons {
     display: flex;
     justify-content: space-between;
 
-    .rating {
-      background-color: $Dark-Blue;
-      border: none;
-      width: 3rem;
-      height: 3rem;
-      border-radius: 50%;
-      color: $Light-Grey;
-      font-weight: 700;
+    input[type='radio'] {
+      display: none;
     }
 
-    .rating:hover {
+    .numbers {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: $Dark-Blue;
+      width: 3rem;
+      height: 3rem;
+      font-weight: 700;
+      border-radius: 50%;
+      color: $Light-Grey;
+      cursor: pointer;
+    }
+
+    input:checked + label {
+      background: $Orange;
+      color: $White;
+    }
+
+    label:hover {
       background-color: $Medium-Grey;
       color: $White;
       cursor: pointer;
     }
-    .rating:active {
-      background-color: $Orange;
-      color: $White;
-    }
   }
+
   .submit {
     background-color: $Orange;
     color: $White;
@@ -82,7 +94,10 @@ body {
     border: none;
     border-radius: 20px;
     height: 2.5rem;
+    margin-top: 2em;
+    width: 100%;
   }
+
   .submit:hover {
     background-color: $White;
     color: $Orange;
