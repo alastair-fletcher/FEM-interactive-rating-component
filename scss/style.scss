@@ -1,0 +1,91 @@
+$Orange: hsl(25, 97%, 53%);
+$White: hsl(0, 0%, 100%);
+$Light-Grey: hsl(217, 12%, 63%);
+$Medium-Grey: hsl(216, 12%, 54%);
+$Dark-Blue: hsl(213, 19%, 18%);
+$Very-Dark-Blue: hsl(216, 12%, 8%);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+  background-color: $Very-Dark-Blue;
+  color: $Light-Grey;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: linear-gradient(180deg, $Dark-Blue -60%, $Very-Dark-Blue 160%);
+  max-width: 400px;
+  height: 400px;
+  border-radius: 20px;
+  padding: 2rem;
+
+  .star-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: $Dark-Blue;
+    border: none;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+  }
+  h1 {
+    color: $White;
+    margin-bottom: 0.3em;
+    font-weight: 400;
+  }
+  p {
+    line-height: 1.7;
+  }
+  .rating-buttons {
+    display: flex;
+    justify-content: space-between;
+
+    .rating {
+      background-color: $Dark-Blue;
+      border: none;
+      width: 3rem;
+      height: 3rem;
+      border-radius: 50%;
+      color: $Light-Grey;
+      font-weight: 700;
+    }
+
+    .rating:hover {
+      background-color: $Medium-Grey;
+      color: $White;
+      cursor: pointer;
+    }
+    .rating:active {
+      background-color: $Orange;
+      color: $White;
+    }
+  }
+  .submit {
+    background-color: $Orange;
+    color: $White;
+    letter-spacing: 2px;
+    font-weight: 700;
+    border: none;
+    border-radius: 20px;
+    height: 2.5rem;
+  }
+  .submit:hover {
+    background-color: $White;
+    color: $Orange;
+    cursor: pointer;
+  }
+}
