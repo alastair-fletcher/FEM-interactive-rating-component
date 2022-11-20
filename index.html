@@ -16,47 +16,58 @@
       href="./images/favicon-32x32.png"
     />
     <link rel="stylesheet" href="css/style.min.css" />
+    <script src="index.js" defer></script>
     <title>Frontend Mentor | Interactive rating component</title>
   </head>
-  <body>
+  <body class="body">
     <main>
-      <div class="star-image">
-        <img src="./images/icon-star.svg" alt="star" />
-      </div>
-      <div class="text">
-        <h1>How did we do?</h1>
-        <p>
-          Please let us know how we did with your support request. All feedback
-          is appreciated to help us improve our offering!
-        </p>
-      </div>
-      <form action="">
-        <div class="rating-buttons">
-          <input type="radio" name="ratings" id="one" value="1" />
-          <label class="numbers" for="one">1</label>
-
-          <input type="radio" name="ratings" id="two" value="2" />
-          <label class="numbers" for="two">2</label>
-
-          <input type="radio" name="ratings" id="three" value="3" />
-          <label class="numbers" for="three">3</label>
-
-          <input type="radio" name="ratings" id="four" value="4" />
-          <label class="numbers" for="four">4</label>
-
-          <input type="radio" name="ratings" id="five" value="5" />
-          <label class="numbers" for="five">5</label>
+      <div class="main-card">
+        <div class="star-image">
+          <img src="./images/icon-star.svg" alt="star" />
         </div>
-        <button class="submit">SUBMIT</button>
-      </form>
-      <!-- Thank you state start -->
+        <div class="text">
+          <h1>How did we do?</h1>
+          <p>
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+        </div>
+        <form action="" class="rating-form">
+          <div class="rating-buttons">
+            <input type="radio" name="ratings" id="one" value="1" />
+            <label class="numbers" for="one">1</label>
 
-      <!-- You selected -->
-      <!-- Add rating here -->
-      <!-- out of 5 Thank you! We appreciate you taking the time to give a rating.
-        If you ever need more support, don’t hesitate to get in touch! -->
+            <input type="radio" name="ratings" id="two" value="2" />
+            <label class="numbers" for="two">2</label>
 
-      <!-- Thank you state end -->
+            <input type="radio" name="ratings" id="three" value="3" />
+            <label class="numbers" for="three">3</label>
+
+            <input type="radio" name="ratings" id="four" value="4" />
+            <label class="numbers" for="four">4</label>
+
+            <input type="radio" name="ratings" id="five" value="5" />
+            <label class="numbers" for="five">5</label>
+          </div>
+          <button type="submit" class="submit">SUBMIT</button>
+        </form>
+      </div>
+
+      <div class="thank-you-card hidden">
+        <img
+          class="thank-you-image"
+          src="./images/illustration-thank-you.svg"
+          alt="thanks"
+        />
+        <span class="rating"></span>
+        <div class="text">
+          <h1>Thank you!</h1>
+          <p>
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </div>
     </main>
   </body>
 </html>
